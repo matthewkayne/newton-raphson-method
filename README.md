@@ -2,9 +2,13 @@
 
 Solves a functions root using the Newton-Raphson method. It requires three parameters, the function, the x₀ value, and the number of iterations.
 
-Run [real_time_graph.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/real_time_graph.py) to see a graphical visualisation of the method
+## Real Time Graph
 
-Start by importing the function and sympy:
+Run [newton_raphson_graph.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/newton_raphson_graph.py) to see a graphical visualisation of the method
+
+## Use The Function
+
+To use the function, start by importing the function and sympy:
 
 ```python
 from sympy import *
