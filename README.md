@@ -1,4 +1,4 @@
-# Newton Raphson
+# Newton Raphson Method
 
 Solves a functions root using the Newton-Raphson method. It requires three parameters, the function, the x₀ value, and the number of iterations.
 
