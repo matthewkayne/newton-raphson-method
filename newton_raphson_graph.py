@@ -13,6 +13,8 @@ def graph(function, x_value, iterations):
 
     x = np.linspace(-2, 2, 100)
 
+    plt.subplots_adjust(bottom=0.2)
+
     y = x
     plt.plot(x, y, 'b', label='x')
 
