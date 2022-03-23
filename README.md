@@ -20,3 +20,5 @@ Finally call the Newton-Raphson function
 ```python
 nr((x**3 + 2*x - 2)), 1, 3)
 ```
+
+See [example.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/example.py) for a functional example
