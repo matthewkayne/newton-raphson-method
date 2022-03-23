@@ -1,5 +1,7 @@
 # Newton Raphson Method
 
+[![CodeFactor](https://www.codefactor.io/repository/github/matthewkayne/newton-raphson-method/badge)](https://www.codefactor.io/repository/github/matthewkayne/newton-raphson-method)
+
 Solves a functions root using the Newton-Raphson method. It requires three parameters, the function, the x₀ value, and the number of iterations.
 
 ## Real Time Graph
