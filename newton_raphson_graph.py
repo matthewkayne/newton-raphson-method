@@ -12,7 +12,6 @@ def graph(function, x_value, iterations):
     result = nr(function, x_value, iterations)
 
     x = np.linspace(-2, 2, 100)
-    fig = plt.figure(figsize=(14, 8))
 
     y = x
     plt.plot(x, y, 'b', label='x')
