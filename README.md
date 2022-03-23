@@ -2,6 +2,8 @@
 
 Solves a functions root using the Newton-Raphson method. It requires three parameters, the function, the x₀ value, and the number of iterations.
 
+Run [real_time_graph.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/real_time_graph.py) to see a graphical visualisation of the method
+
 Start by importing the function and sympy:
 
 ```python
