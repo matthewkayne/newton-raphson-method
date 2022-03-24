@@ -1,7 +1,6 @@
 from tkinter import Tk, Text, Label, Button
 from matplotlib.figure import Figure
-from matplotlib.backends.backend_tkagg import (
-    FigureCanvasTkAgg, NavigationToolbar2Tk)
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 import numpy as np
 from numpy import linspace
 from sympy import Symbol, diff, sympify
