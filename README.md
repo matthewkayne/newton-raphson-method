@@ -8,7 +8,7 @@ Solves a functions root using the Newton-Raphson method. It requires three param
 
 This is an application that allows you to input aa function, x₀ value and number of iterations into a UI and see it graphed and solved.
 
-![image](./screenshots/test.png)
+![image](./screenshots/interactive_graph.png)
 
 Run [interactive\_\_graph.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/interactive_graph.py) to see the graphical visualisation of the method
 
