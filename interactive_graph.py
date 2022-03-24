@@ -29,11 +29,9 @@ def plot():
 
     result = nr(function, x_value, iterations)
 
-    x = np.linspace(-2, 2, 100)
-    y = x
-    plot1.plot(x, y, 'b', label='x')
-
-    x = Symbol('x')
+    x_np = np.linspace(-2, 2, 100)
+    y = x_np
+    plot1.plot(x_np, y, 'b', label='x')
 
     lam_x = lambdify(x, (function), modules=['numpy'])
 
@@ -44,22 +42,17 @@ def plot():
     plot1.legend()
     plot1.grid(True, linestyle=':')
 
-    x = np.linspace(-2, 2, 100)
-
     result_list = list(result.values())
 
-    print(result_list)
-    x_symbol = Symbol('x')
-
     def slope(x_value):
-        return diff(function, x_symbol).subs(x_symbol, x_value)
+        return diff(function, x).subs(x, x_value)
 
     for i, _ in enumerate(result_list):
         x1 = result_list[i]
-        y1 = function.subs(x_symbol, x1)
-        y = slope(result_list[i]) * (x-x1) + y1
+        y1 = function.subs(x, x1)
+        y = slope(result_list[i]) * (x_np-x1) + y1
 
-        plot1.plot(x, y, 'C1--', linewidth=2)
+        plot1.plot(x_np, y, 'C1--', linewidth=2)
 
     # creating the Tkinter canvas
     # containing the Matplotlib figure
