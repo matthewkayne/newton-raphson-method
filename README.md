@@ -1,6 +1,7 @@
-# Newton Raphson Method
+<p align="center"><a href="https://en.wikipedia.org/wiki/Newton%27s_method"><img src="./images/isaac-newton.png" alt="Gray shape shifter" height="60"/></a></p>
+<h1 align="center">The Newton Raphson Method</h1>
 
-[![CodeFactor](https://www.codefactor.io/repository/github/matthewkayne/newton-raphson-method/badge)](https://www.codefactor.io/repository/github/matthewkayne/newton-raphson-method)
+<p align="center"><a href="https://www.codefactor.io/repository/github/matthewkayne/newton-raphson-method"><img src="https://www.codefactor.io/repository/github/matthewkayne/newton-raphson-method/badge" alt="CodeFactor" /></a></p>
 
 Solves a functions root using the Newton-Raphson method. It requires three parameters, the function, the x₀ value, and the number of iterations.
 
@@ -8,7 +9,7 @@ Solves a functions root using the Newton-Raphson method. It requires three param
 
 This is an application that allows you to input aa function, x₀ value and number of iterations into a UI and see it graphed and solved.
 
-![image](./screenshots/interactive_graph.png)
+![image](./images/interactive_graph.png)
 
 Run [interactive\_\_graph.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/interactive_graph.py) to see the graphical visualisation of the method
 
@@ -16,7 +17,7 @@ Run [interactive\_\_graph.py](https://github.com/matthewkayne/newton-raphson-met
 
 This shows the real time lines being drawn when solving using the Newton-Raphson method
 
-![image](./screenshots/newton_raphson_graph.gif)
+![image](./images/newton_raphson_graph.gif)
 
 Run [newton_raphson_graph.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/newton_raphson_graph.py) to see the graphical visualisation of the method
 
