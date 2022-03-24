@@ -1,3 +1,4 @@
+from cv2 import SimpleBlobDetector_Params
 import matplotlib.pyplot as plt
 import numpy as np
 from numpy import linspace
@@ -11,8 +12,6 @@ def graph(function, x_value, iterations):
     result = nr(function, x_value, iterations)
 
     x = np.linspace(-2, 2, 100)
-
-    plt.subplots_adjust(bottom=0.2)
 
     y = x
     plt.plot(x, y, 'b', label='x')
