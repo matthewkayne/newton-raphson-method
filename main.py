@@ -11,10 +11,12 @@ from sympy.utilities.lambdify import lambdify
 
 x = Symbol('x')
 
+run = False
+
 
 def plot():
-
-    global graph
+    global run
+    global canvas
 
     function = sympify(input_function.get(1.0, "end-1c"))
     x_value = int(input_x_value.get(1.0, "end-1c"))
@@ -28,7 +30,6 @@ def plot():
     result = nr(function, x_value, iterations)
 
     x = np.linspace(-2, 2, 100)
-    print(x)
     y = x
     plot1.plot(x, y, 'b', label='x')
 
@@ -71,13 +72,13 @@ def plot():
     # placing the canvas on the Tkinter window
     canvas.get_tk_widget().pack()
 
-    # creating the Matplotlib toolbar
-    toolbar = NavigationToolbar2Tk(canvas,
-                                   window)
-    toolbar.update()
-
+    if run == False:
+        # creating the Matplotlib toolbar
+        toolbar = NavigationToolbar2Tk(canvas,
+                                       window)
+        toolbar.update()
+        run = True
     # placing the toolbar on the Tkinter window
-    canvas.get_tk_widget().pack()
 
 
 # the main Tkinter window
@@ -114,9 +115,15 @@ input_iterations = Text(window,
                         width=15)
 input_iterations.pack()
 
+
+def clear_graph():
+    if run != False:
+        canvas.get_tk_widget().destroy()
+
+
 # button that displays the plot
 plot_button = Button(master=window,
-                     command=plot,
+                     command=lambda: [clear_graph(), plot()],
                      height=2,
                      width=10,
                      text="Plot")
