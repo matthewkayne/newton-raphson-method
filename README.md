@@ -5,7 +5,7 @@
 
 Solves a functions root using the Newton-Raphson method. It requires three parameters, the function, the x₀ value, and the number of iterations.
 
-## Interactive Graph
+## ⚡️ Interactive Graph
 
 This is an application that allows you to input aa function, x₀ value and number of iterations into a UI and see it graphed and solved.
 
@@ -13,7 +13,7 @@ This is an application that allows you to input aa function, x₀ value and numb
 
 Run [interactive\_\_graph.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/interactive_graph.py) to see the graphical visualisation of the method
 
-## Real Time Graph Function
+## 📈 Real Time Graph Function
 
 This shows the real time lines being drawn when solving using the Newton-Raphson method
 
@@ -21,7 +21,7 @@ This shows the real time lines being drawn when solving using the Newton-Raphson
 
 Run [newton_raphson_graph.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/newton_raphson_graph.py) to see the graphical visualisation of the method
 
-## Use The Base Function
+## 🧠 Use The Base Function
 
 To use the function, start by importing the function and sympy:
 
