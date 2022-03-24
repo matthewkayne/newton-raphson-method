@@ -84,7 +84,7 @@ def plot():
 window = Tk()
 
 # setting the title
-window.title('Plotting in Tkinter')
+window.title('Newton-Raphson Method')
 
 # dimensions of the main window
 window.geometry("500x500")
