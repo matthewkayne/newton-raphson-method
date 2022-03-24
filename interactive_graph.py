@@ -73,6 +73,9 @@ def plot():
     # placing the canvas on the Tkinter window
     canvas.get_tk_widget().pack()
 
+    label_result = Label(window, text=f"Root = {round(result_list[-1],5)} 5dp")
+    label_result.pack()
+
     if run is False:
         # creating the Matplotlib toolbar
         toolbar = NavigationToolbar2Tk(canvas,
