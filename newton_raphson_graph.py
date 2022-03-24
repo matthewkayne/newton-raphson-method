@@ -1,10 +1,9 @@
-from ast import expr
 import matplotlib.pyplot as plt
 import numpy as np
 from numpy import linspace
-from sympy import *
+from sympy import Symbol, diff
 from newton_raphson import nr
-from sympy.utilities.lambdify import lambdify, implemented_function, lambdastr
+from sympy.utilities.lambdify import lambdify
 
 
 def graph(function, x_value, iterations):
