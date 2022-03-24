@@ -1,17 +1,18 @@
-from tkinter import *
+from tkinter import Tk, Text, Label, Button
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import (
     FigureCanvasTkAgg, NavigationToolbar2Tk)
-
 import numpy as np
 from numpy import linspace
-from sympy import Symbol, diff, parse_expr, sympify
-from newton_raphson import nr
+from sympy import Symbol, diff, sympify
 from sympy.utilities.lambdify import lambdify
+from newton_raphson import nr
+
 
 x = Symbol('x')
 
 run = False
+canvas = None
 
 
 def plot():
@@ -54,7 +55,7 @@ def plot():
     def slope(x_value):
         return diff(function, x_symbol).subs(x_symbol, x_value)
 
-    for i in range(len(result_list)):
+    for i, _ in enumerate(result_list):
         x1 = result_list[i]
         y1 = function.subs(x_symbol, x1)
         y = slope(result_list[i]) * (x-x1) + y1
@@ -72,7 +73,7 @@ def plot():
     # placing the canvas on the Tkinter window
     canvas.get_tk_widget().pack()
 
-    if run == False:
+    if run is False:
         # creating the Matplotlib toolbar
         toolbar = NavigationToolbar2Tk(canvas,
                                        window)
@@ -106,7 +107,6 @@ input_x_value = Text(window,
                      width=15)
 input_x_value.pack()
 
-
 label_iterations = Label(window, text="Iterations:")
 label_iterations.pack()
 
@@ -117,7 +117,8 @@ input_iterations.pack()
 
 
 def clear_graph():
-    if run != False:
+    """Clear Graph"""
+    if run is not False:
         canvas.get_tk_widget().destroy()
 
 

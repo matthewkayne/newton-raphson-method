@@ -4,11 +4,23 @@
 
 Solves a functions root using the Newton-Raphson method. It requires three parameters, the function, the x₀ value, and the number of iterations.
 
-## Real Time Graph
+## Interactive Graph
 
-Run [newton_raphson_graph.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/newton_raphson_graph.py) to see a graphical visualisation of the method
+This is an application that allows you to input aa function, x₀ value and number of iterations into a UI and see it graphed and solved.
 
-## Use The Function
+![image](./screenshots/interactive_graph.png)
+
+Run [interactive\_\_graph.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/interactive_graph.py) to see the graphical visualisation of the method
+
+## Real Time Graph Function
+
+This shows the real time lines being drawn when solving using the Newton-Raphson method
+
+![image](./screenshots/newton_raphson_graph.gif)
+
+Run [newton_raphson_graph.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/newton_raphson_graph.py) to see the graphical visualisation of the method
+
+## Use The Base Function
 
 To use the function, start by importing the function and sympy:
 
@@ -29,4 +41,4 @@ Finally call the Newton-Raphson function
 nr((x**3 + 2*x - 2)), 1, 3)
 ```
 
-See [example.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/example.py) for a functional example
+See [newton_raphson.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/newton_raphson.py) for the base function

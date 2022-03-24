@@ -1,4 +1,4 @@
-from sympy import *
+from sympy import Symbol, diff
 
 
 def nr(function, x_value, iterations):

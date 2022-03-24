@@ -1,10 +1,9 @@
-from cv2 import SimpleBlobDetector_Params
 import matplotlib.pyplot as plt
 import numpy as np
 from numpy import linspace
 from sympy import Symbol, diff
-from newton_raphson import nr
 from sympy.utilities.lambdify import lambdify
+from newton_raphson import nr
 
 
 def graph(function, x_value, iterations):
@@ -43,7 +42,7 @@ def graph(function, x_value, iterations):
     def slope(x_value):
         return diff(function, x_symbol).subs(x_symbol, x_value)
 
-    for i in range(len(result_list)):
+    for i, _ in enumerate(result_list):
         x1 = result_list[i]
         y1 = function.subs(x_symbol, x1)
         y = slope(result_list[i]) * (x-x1) + y1
