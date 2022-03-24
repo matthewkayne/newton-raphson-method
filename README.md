@@ -1,4 +1,4 @@
-<p align="center"><a href="https://en.wikipedia.org/wiki/Newton%27s_method"><img src="./images/isaac-newton.png" alt="Gray shape shifter" height="60"/></a></p>
+<p align="center"><a href="https://en.wikipedia.org/wiki/Newton%27s_method"><img src="./images/isaac-newton-logo.png" alt="Gray shape shifter" height="60"/></a></p>
 <h1 align="center">The Newton Raphson Method</h1>
 
 <p align="center"><a href="https://www.codefactor.io/repository/github/matthewkayne/newton-raphson-method"><img src="https://www.codefactor.io/repository/github/matthewkayne/newton-raphson-method/badge" alt="CodeFactor" /></a></p>
