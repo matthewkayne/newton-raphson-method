@@ -1,7 +1,9 @@
+"""Newton-Raphson Method"""
 from sympy import Symbol, diff
 
 
 def nr(function, x_value, iterations):
+    """Newton Raphson"""
     x = Symbol('x')
 
     results = {"x0": x_value}

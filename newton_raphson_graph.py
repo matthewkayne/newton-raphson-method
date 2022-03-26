@@ -1,27 +1,27 @@
+"""Newton-Raphson Graph"""
 import matplotlib.pyplot as plt
 import numpy as np
-from numpy import linspace
 from sympy import Symbol, diff
 from sympy.utilities.lambdify import lambdify
 from newton_raphson import nr
 
 
 def graph(function, x_value, iterations):
+    """Graph"""
 
     result = nr(function, x_value, iterations)
 
-    x = np.linspace(-2, 2, 100)
+    x_np = np.linspace(-2, 2, 100)
 
-    y = x
-    plt.plot(x, y, 'b', label='x')
+    y = x_np
+    plt.plot(x_np, y, 'b', label='x')
 
-    x = Symbol('x')
+    x_symbol = Symbol('x')
 
     lam_x = lambdify(x, (function), modules=['numpy'])
 
-    x_vals = linspace(-2, 2, 100)
-    y_vals = lam_x(x_vals)
-    plt.plot(x_vals, y_vals, label=f"{function}")
+    y_vals = lam_x(x_np)
+    plt.plot(x_np, y_vals, label=f"{function}")
 
     plt.legend()
     plt.grid(True, linestyle=':')
@@ -32,22 +32,20 @@ def graph(function, x_value, iterations):
     plt.xlabel('x-axis')
     plt.ylabel('y-axis')
 
-    x = np.linspace(-2, 2, 100)
-
     result_list = list(result.values())
 
     print(result_list)
-    x_symbol = Symbol('x')
 
     def slope(x_value):
+        """Slope"""
         return diff(function, x_symbol).subs(x_symbol, x_value)
 
     for i, _ in enumerate(result_list):
         x1 = result_list[i]
         y1 = function.subs(x_symbol, x1)
-        y = slope(result_list[i]) * (x-x1) + y1
+        y = slope(result_list[i]) * (x_np-x1) + y1
 
-        plt.plot(x, y, 'C1--', linewidth=2)
+        plt.plot(x_np, y, 'C1--', linewidth=2)
         plt.pause(1.5)
 
     # Show plot

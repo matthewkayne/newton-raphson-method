@@ -1,3 +1,4 @@
+"""Interactive Graph"""
 from tkinter import Tk, Text, Label, Button
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
@@ -15,6 +16,7 @@ canvas = None
 
 
 def plot():
+    """Plot"""
     global run
     global canvas
 
@@ -45,6 +47,7 @@ def plot():
     result_list = list(result.values())
 
     def slope(x_value):
+        """Slope"""
         return diff(function, x).subs(x, x_value)
 
     for i, _ in enumerate(result_list):
