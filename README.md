@@ -19,7 +19,7 @@ This shows the real time lines being drawn when solving using the Newton-Raphson
 
 ![image](./images/newton_raphson_graph.gif)
 
-Run [newton_raphson_graph.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/newton_raphson_graph.py) to see the graphical visualisation of the method
+Run [newton_raphson_graph.py](https://github.com/matthewkayne/newton-raphson-method/blob/master/examples/newton_raphson_graph.py) to see the graphical visualisation of the method
 
 ## 🧠 Use The Base Function
 
